@@ -1,0 +1,24 @@
+#intro_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#name {
+    color: #161B40;
+}
+
+#email {
+    color: #161B40;
+}
+
+#education_heading {
+    color: #161B40;
+}
+
+#experience_heading {
+    color: #161B40;
+}
+
+#projects_title {
+    color: #161B40;
+}

@@ -1,0 +1,59 @@
+<div id="content">
+  <div id="first_section">
+    <h1 id="product_headline">Crypto Tracker: All your crypto in one place</h1>
+    <p id="product_description">
+      Crypto Tracker is a web app that allows you to easily manage your Crypto
+      currency holdings in one place. Keep track of the prices and your
+      profit/loss trends.
+    </p>
+  </div>
+  <div id="second_section">
+    <h2 id="features_heading">Features</h2>
+    <ul id="features_list">
+      <li class="feature">Add/Remove Crypto Assets</li>
+      <li class="feature">Track Prices</li>
+      <li class="feature">View PnL</li>
+    </ul>
+  </div>
+</div>
+
+<div id="login_register_section">
+  <div id="registration_section" class="flex-child">
+    <h2 id="registration_heading">Registration</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onRegisterSubmit()">
+      <label for="username_field">UserName: </label>
+      <input
+        id="username_field"
+        type="text"
+        formControlName="username_field"
+      /><br />
+      <label for="email_field">Email: </label>
+      <input id="email_field" type="text" formControlName="email_field" /><br />
+      <label for="password_field">Passsword: </label>
+      <input id="password_field" type="text" formControlName="password_field" /><br>
+      <button id="signup_button" type="submit">Signup</button><br />
+      <label id="signup_error">{{ signupMessage }}</label>
+    </form>
+  </div>
+
+  <div id="login_section" class="flex-child">
+    <h2 id="login_heading">Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+      <label for="login_username_field">UserName: </label>
+      <input
+        id="login_username_field"
+        type="text"
+        formControlName="login_username_field"
+      /><br />
+      <label for="login_password_field">Passsword: </label>
+      <input
+        id="login_password_field"
+        type="text"
+        formControlName="login_password_field"
+      /><br>
+      <button id="login_button" type="submit">Login</button><br />
+      <label id="login_error">{{ loginMessage }}</label>
+    </form>
+  </div>
+</div>
+

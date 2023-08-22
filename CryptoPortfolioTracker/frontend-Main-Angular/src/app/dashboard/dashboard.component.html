@@ -1,0 +1,39 @@
+<h1 id="dashboard_heading">Dashboard</h1>
+<table id="assets_table" >
+  <caption>
+    Assets
+  </caption>
+  <thead>
+    <tr>
+      <th class="table_heading">Token</th>
+      <th class="table_heading">Qty. Owned</th>
+      <th class="table_heading">Price</th>
+      <th class="table_heading">Total Value</th>
+      <th class="table_heading">Allocation</th>
+      <th class="table_heading">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let asset of cyptoArray; let idx = index">
+      <td class="table_data">{{asset.token}}</td>
+      <td class="table_data">{{asset.quantity}}</td>
+      <td class="table_data">${{asset.price}}</td>
+      <td class="table_data">${{asset.totalValue}}</td>
+      <td class="table_data">{{asset.allocation}}%</td>
+      <td>
+        <button class="delete_button" (click)="deleteCrypto(idx, asset.token, asset.quantity)">delete</button>
+        <button class="edit_button" (click)="editCrypto(idx, asset.token, asset.quantity)">edit</button>
+      </td>
+   </tr>
+  </tbody>
+</table><br><br>
+<div>
+  <form [formGroup]="addCryptoForm" (ngSubmit)="addCrypto()">
+    <label for="dashboard_token">Token: </label>
+    <input id="dashboard_token" type="text" formControlName="dashboard_token"/>
+    <label for="dashboard_quantity">Quantity: </label>
+    <input id="dashboard_quantity" type="text" formControlName="dashboard_quantity"/>
+    <button id="{{addEditButtonID}}" type="submit" >{{addEditButton}}</button><br>
+    <label id="add_asset_error">{{ assetMessage }}</label>
+  </form>
+</div>

@@ -1,0 +1,60 @@
+#Dashboard {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#assets_table {
+  padding: 10px;
+}
+
+.table_heading {
+  background-color: white;
+  color: black;
+}
+
+.table_data {
+  border-style: solid;
+  border-width: 1px;
+}
+
+#add_asset_form{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#token_label {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+#quantity_label {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+#asset_button_div {
+  padding-left: 10px;
+}
+
+#dashboard_add_button {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+#logout_link {
+  background-color: black;
+  color: white;
+  padding:15px;
+  border-radius: 15px;
+  display: none;
+}
+

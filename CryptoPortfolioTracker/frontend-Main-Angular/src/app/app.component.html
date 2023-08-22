@@ -1,0 +1,37 @@
+<div id="header">
+  <img id="logo" src="../assets/logo.png" alt="logo" width="" height="" />
+  <label id="company_name">Crypto Tracker</label>
+  <button *ngIf="edited" id="logout_link" (click)="logout()">Logout</button>
+</div>
+
+<router-outlet></router-outlet>
+
+<div id="footer">
+  <label id="copyright_notice">Copyright Crypto Tracker</label>
+  <div id="sm_links">
+    <a class="sm" href="https://skillreactor.io"
+      ><img
+        id="sm_facebook"
+        src="../assets/facebook.png"
+        alt="facebook"
+        width=""
+        height=""
+    /></a>
+    <a class="sm" href="https://skillreactor.io"
+      ><img
+        id="sm_linkedin"
+        src="../assets/linkedin.png"
+        alt="linkedin"
+        width=""
+        height=""
+    /></a>
+    <a class="sm" href="https://skillreactor.io"
+      ><img
+        id="sm_twitter"
+        src="../assets/twitter.png"
+        alt="twitter"
+        width=""
+        height=""
+    /></a>
+  </div>
+</div>

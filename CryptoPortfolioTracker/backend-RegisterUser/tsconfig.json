@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "rootDir": "./",
+      "outDir": ".build",
+      "resolveJsonModule": true
+    },
+    "files": [
+      "handler.ts"
+    ],
+    "exclude": ["node_modules", "./coverage", "./dist", "__tests__", "jest.config.js"]
+}
